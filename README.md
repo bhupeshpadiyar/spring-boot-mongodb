@@ -15,7 +15,7 @@ Spring Boot RestFull application with MongoDB.
       mvn spring-boot:run
       ```
       
-### Create Users Service
+## Create Users Service
 Request Type - GET 
 Request URL :
 ```
@@ -39,11 +39,15 @@ Response -
 }
 ```
 
-### Read User By Id Service
+## Read User By Id Service
 Request Type - GET 
 Request URL :
-http://localhost:8888/users/read?id=5bc6aebb99af53197c230297
 
+```
+http://localhost:8888/users/read?id=5bc6aebb99af53197c230297
+```
+
+```
 Response: 
 {
     "message": "User found successfully",
@@ -58,15 +62,19 @@ Response:
     },
     "status": "1"
 }
+```
 
-### Read User All Users Service
+## Read User All Users Service
 Request Type - GET 
 Request URL :
 
+```
 http://localhost:8888/users/read-all
+```
 
 Response: 
 
+```
 {
     "message": "Users found successfully",
     "users": [
@@ -91,15 +99,21 @@ Response:
     ],
     "status": "1"
 }
+```
 
-### Delete an User Service
+## Delete an User Service
 Request Type - GET 
 Request URL :
 
+```
 http://localhost:8888/users/delete?id=5bc6b38199af5309d029d54b
+```
 
 Response: 
+
+```
 {
     "message": "User deleted successfully",
     "status": "1"
 }
+```
