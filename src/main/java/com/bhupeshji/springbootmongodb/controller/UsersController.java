@@ -33,12 +33,12 @@ public class UsersController {
 		Map<String, Object> dataMap = new HashMap<String, Object>();
 		dataMap.put("message", "User created successfully");
 		dataMap.put("status", "1");
-		dataMap.put("booking", usersRepo.save(users));
+		dataMap.put("user", usersRepo.save(users));
 		return dataMap;
 	}
 
 	/**
-	 * GET /read --> Read a booking by booking id from the database.
+	 * GET /read --> Read a User by User Id from the database.
 	 */
 	@RequestMapping("/read")
 	public Map<String, Object> read(@RequestParam String id) {
@@ -70,8 +70,8 @@ public class UsersController {
 	 * GET /delete --> Delete a User from the database.
 	 */
 	@RequestMapping("/delete")
-	public Map<String, Object> delete(@RequestParam String userId) {
-		usersRepo.deleteById(userId);
+	public Map<String, Object> delete(@RequestParam String id) {
+		usersRepo.deleteById(id);
 		Map<String, Object> dataMap = new HashMap<String, Object>();
 		dataMap.put("message", "User deleted successfully");
 		dataMap.put("status", "1");
@@ -87,7 +87,7 @@ public class UsersController {
 		Map<String, Object> dataMap = new HashMap<String, Object>();
 		dataMap.put("message", "Users found successfully");
 		dataMap.put("status", "1");
-		dataMap.put("bookings", users);
+		dataMap.put("users", users);
 		return dataMap;
 	}
 
