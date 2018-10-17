@@ -1,10 +1,10 @@
 # spring-boot-mongodb
 Spring Boot RestFull application with MongoDB.
 
-# Steps to run the project
-1:-Download The Project
-2:-Go to the project folder
-3:- Run following command
+## Steps to run the project
+1. Download The Project
+2. Go to the project folder
+3. Run following command
 
       mvn eclipse:eclipse
 
@@ -12,7 +12,7 @@ Spring Boot RestFull application with MongoDB.
 
       mvn spring-boot:run
       
-## Create Users Service
+### Create Users Service
 Request Type - GET 
 Request URL :
 http://localhost:8888/users/create?userId=bhupeshpadiyar@gmail.com&userName=Bhupesh SIngh Padiyar&password=welcome1&role=Admin
@@ -32,7 +32,7 @@ Response -
     "status": "1"
 }
 
-## Read User By Id Service
+### Read User By Id Service
 Request Type - GET 
 Request URL :
 http://localhost:8888/users/read?id=5bc6aebb99af53197c230297
@@ -52,7 +52,7 @@ Response:
     "status": "1"
 }
 
-## Read User All Users Service
+### Read User All Users Service
 Request Type - GET 
 Request URL :
 
@@ -85,7 +85,7 @@ Response:
     "status": "1"
 }
 
-## Delete an User Service
+### Delete an User Service
 Request Type - GET 
 Request URL :
 
