@@ -5,12 +5,15 @@ Spring Boot RestFull application with MongoDB.
 1. Download The Project
 2. Go to the project folder
 3. Run following command
-
+      ```
       mvn eclipse:eclipse
-
+      ```
+      ```
       mvn clean compile
-
+      ```
+      ```
       mvn spring-boot:run
+      ```
       
 ### Create Users Service
 Request Type - GET 
