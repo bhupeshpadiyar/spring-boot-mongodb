@@ -18,9 +18,12 @@ Spring Boot RestFull application with MongoDB.
 ### Create Users Service
 Request Type - GET 
 Request URL :
+```
 http://localhost:8888/users/create?userId=bhupeshpadiyar@gmail.com&userName=Bhupesh SIngh Padiyar&password=welcome1&role=Admin
+```
 
 Response - 
+```
 {
     "user": {
         "id": "5bc6aebb99af53197c230297",
@@ -34,6 +37,7 @@ Response -
     "message": "User created successfully",
     "status": "1"
 }
+```
 
 ### Read User By Id Service
 Request Type - GET 
